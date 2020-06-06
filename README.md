@@ -1,2 +1,3 @@
-# codejam-google
-Collection of codejam challenges from google. Theses challenges can be found at https://codingcompetitions.withgoogle.com/codejam.
+# Programming Challenges
+
+The solved challenges and exercises from many different platforms.
