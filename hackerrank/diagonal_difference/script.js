@@ -1,7 +1,7 @@
 // Strict Mode was a new feature in ECMAScript 5 that allows you to place a program, 
 // or a function, in a “strict” operating context. This strict context prevents certain 
 // actions from being taken and throws more exceptions.
- 
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
 'use strict';
 
 // The fs module provides an API for interacting with the file system 
@@ -20,9 +20,6 @@ const fs = require('fs');
 process.stdin.resume();
 process.stdin.setEncoding('utf-8');
 
-// The path to register the result
-process.env.OUTPUT_PATH = 'result-'+Date.now()+'.js';
-
 let inputString = '';
 let currentLine = 0;
 
@@ -34,7 +31,10 @@ process.stdin.on('data', function(inputStdin) {
 
 
 // End the stdin with (CTRL+D) - This don't work on Windows CMD
+// Work with files inserted by node script.js < [file]
 process.stdin.on('end', function() {
+    // trim to remove the extra lines that might have 
+    // in the end and begining of the  file
     inputString = inputString.trim().split('\n');
 
     main();
@@ -67,13 +67,14 @@ function diagonalDifference(arr) {
 
 function main() {
 
-    // creates the result file
+    // creates the result/output file
     const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
 
+    // Read the first line - Matriz Size
+    // Parse Int decimal
     const n = parseInt(readLine().trim(), 10);
 
     let arr = Array(n);
-
 
     for (let i = 0; i < n; i++) {
         arr[i] = readLine().replace(/\s+$/g, '').split(' ').map(arrTemp => parseInt(arrTemp, 10));
