@@ -2,6 +2,7 @@
 
 - Platform: [HackerRank](https://www.hackerrank.com/)
 - Link: https://www.hackerrank.com/challenges/plus-minus/problem
+- Level: Basic
 
 Given an array of integers, calculate the fractions of its elements that are positive, negative, and are zeros. Print the decimal value of each fraction on a new line.
 

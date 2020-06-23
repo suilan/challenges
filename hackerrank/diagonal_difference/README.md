@@ -2,6 +2,7 @@
 
 - Platform: [HackerRank](https://www.hackerrank.com/)
 - Link: https://www.hackerrank.com/challenges/diagonal-difference/problem
+- Level: Basic
 
 Given a square matrix, calculate the absolute difference between the sums of its diagonals.
 
@@ -74,10 +75,3 @@ Sum across the secondary diagonal: 4 + 5 + 10 = 19
 Difference: |4 - 19| = 15
 
 **Note:** |x| is the [absolute value](https://www.mathsisfun.com/numbers/absolute-value.html) of x
-
-## To run
-To run the test, just open the terminal and run
-
-```
-node script.js < tests/input00.txt
-```
