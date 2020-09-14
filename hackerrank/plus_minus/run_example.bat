@@ -17,4 +17,5 @@ set datetime=%datetime: =0%
 REM This variable is needed to know where to save the output
 SET OUTPUT_PATH=%challengeFolderPath%output\%datetime%_output%example%.txt
 node %challengeFolderPath%script.js < %challengeFolderPath%input\input%example%.txt > %OUTPUT_PATH%
+
 echo Test %example% Complete!
