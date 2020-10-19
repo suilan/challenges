@@ -1,3 +1,7 @@
+/**
+ * Script to calculate the diaginal difference
+ */
+
 // Strict Mode was a new feature in ECMAScript 5 that allows you to place a program, 
 // or a function, in a “strict” operating context. This strict context prevents certain 
 // actions from being taken and throws more exceptions.
@@ -10,18 +14,24 @@
 // - To create the result file
 const fs = require('fs');
 
+// To help deal with different filepath representations
+// https://nodejs.org/api/path.html
+const path = require('path');
+
+
+// // Begin reading from stdin so the process does not exit.
+let inputString = '';
+let currentLine = 0;
+
 // The process object is a global that provides information about, 
 // and control over, the current Node.js process. As a global, it is always 
 // available to Node.js applications without using require(). 
 // It can also be explicitly accessed using require():
 // https://nodejs.org/api/process.html
-
-// // Begin reading from stdin so the process does not exit.
-// process.stdin.resume();
-// process.stdin.setEncoding('utf-8');
-
-let inputString = '';
-let currentLine = 0;
+let exampleName = false;
+if( process.argv.length>2 ){
+    exampleName = process.argv[2];
+}
 
 function readLine() {
     return inputString[currentLine++];
@@ -63,7 +73,7 @@ function main() {
     // creates the result/output file
     if(!fs.existsSync('output')) fs.mkdirSync('output');
     let date = new Date().toJSON().replace(/-/g,'').replace('T','').replace(/:/g,'').substr(0,14);
-    const ws = fs.createWriteStream('output/'+date+'output'+exampleName+'.txt');
+    const ws = fs.createWriteStream(path.join('output', date+'output'+exampleName+'.txt'));
 
     // Read the first line - Matriz Size
     // Parse Int decimal
@@ -83,6 +93,10 @@ function main() {
     ws.end();
 }
 
-// start the process
-let exampleName = process.argv[2];
-fs.readFile('../_input/input'+exampleName+'.txt', 'utf8', readInput);
+// Check if a parameter was passed
+if( exampleName ){
+
+    //compose a valid filepath
+    let filePath = path.join( __dirname.replace('js',''),'_input','input'+exampleName+'.txt')
+    fs.readFile(filePath, 'utf8', readInput);
+} else console.log('No example');

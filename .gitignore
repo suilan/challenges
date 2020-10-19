@@ -1,3 +1,3 @@
 # ignore user output in the output directory
 # https://git-scm.com/docs/gitignore
-**/output/*output*.txt
+**/output/*
