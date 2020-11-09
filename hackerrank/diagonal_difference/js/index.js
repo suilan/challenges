@@ -1,5 +1,5 @@
 /**
- * Script to calculate the diaginal difference
+ * Script to calculate the diagonal difference
  */
 
 // Strict Mode was a new feature in ECMAScript 5 that allows you to place a program, 
@@ -11,8 +11,9 @@
 // The fs module provides an API for interacting with the file system 
 // in a manner closely modeled around standard POSIX functions.
 // https://nodejs.org/api/fs.html
-// - To create the result file
+// - To create the output file and read the input
 const fs = require('fs');
+
 
 // To help deal with different filepath representations
 // https://nodejs.org/api/path.html
