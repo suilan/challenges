@@ -1,14 +1,14 @@
-# Hackerranck Challenges
+# Hackerrank Challenges
 Solving the challenges presented in this platform
 
 ## Current Resolved
-- [Plus Minus](./plus_minus/README.md)
-- [Diagonal Difference](./diagonal_difference/README.md)
-- [Mini-Max Sum](./mini-max_sum/README.md)
-- [Staircase](./staircase/README.md)
-- Time_conversion(In progress)
+- [Plus Minus](./plus_minus/)
+- [Diagonal Difference](./diagonal_difference/)
+- [Mini-Max Sum](./mini-max_sum/)
+- [Staircase](./staircase/)
+- [Time Conversion](./time_conversion/)
 
-## Solution Structure
+## Solution Folder Structure
 All challenges are/will be organized in the file/folder structure presented below.
 
 - The **_input** and **_output** folders contain the default input and output for the challenges.
