@@ -1,14 +1,30 @@
-import java.io.File;  // Import the File class
+// File Manipulation
+import java.io.File;  
 import java.io.FileInputStream;  
 import java.io.FileOutputStream;  
 import java.io.OutputStreamWriter;
-import java.io.FileNotFoundException;  // Import this class to handle errors
+
+// Error Handlers
+import java.io.FileNotFoundException;  
 import java.io.IOException;
-import java.nio.charset.StandardCharsets ;
+
+// To read and write the UTF8 files
+// https://docs.oracle.com/javase/7/docs/api/java/nio/charset/StandardCharsets.html
+import java.nio.charset.StandardCharsets;
+
+// To get the current timestamp to generate the output name file
+// https://docs.oracle.com/javase/8/docs/api/java/time/LocalDateTime.html
 import java.time.LocalDateTime;
+
+// Path and Paths
+// https://docs.oracle.com/javase/7/docs/api/java/nio/file/Paths.html
 import java.nio.file.*;
 
-public class Script{
+/**
+ * Developed to be able to read the input data, calculate the diagonal difference
+ * and output the result in the UTF8 format
+ */
+public class Program{
     
     public static String getInput(String filePath){
         // Data types in java
