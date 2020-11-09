@@ -2,7 +2,7 @@
 
 - Platform: [HackerRank](https://www.hackerrank.com/)
 - Link: https://www.hackerrank.com/challenges/staircase/problem
-- Level: Basic
+- Level: **Basic**
 
 Consider a staircase of size :
 
