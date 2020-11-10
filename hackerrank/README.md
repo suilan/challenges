@@ -2,11 +2,12 @@
 Solving the challenges presented in this platform
 
 ## Current Resolved
-- [Plus Minus](./plus_minus/)
-- [Diagonal Difference](./diagonal_difference/)
-- [Mini-Max Sum](./mini-max_sum/)
-- [Staircase](./staircase/)
-- [Time Conversion](./time_conversion/)
+- Problem Solving
+    - [Plus Minus](./problem_solving/plus_minus/)
+    - [Diagonal Difference](./problem_solving/diagonal_difference/)
+    - [Mini-Max Sum](./problem_solving/mini-max_sum/)
+    - [Staircase](./problem_solving/staircase/)
+    - [Time Conversion](./problem_solving/time_conversion/)
 
 ## Solution Folder Structure
 All challenges are/will be organized in the file/folder structure presented below.
