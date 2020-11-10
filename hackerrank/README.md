@@ -8,7 +8,10 @@ Solving the challenges presented in this platform
     - [Mini-Max Sum](./problem_solving/mini-max_sum/)
     - [Staircase](./problem_solving/staircase/)
     - [Time Conversion](./problem_solving/time_conversion/)
-
+- Interview Preparation Kit
+    - Warm-up Challenges
+        - [Sales by Match](./interview_preparation_kit/warm-ups/sock_merchant/)
+        
 ## Solution Folder Structure
 All challenges are/will be organized in the file/folder structure presented below.
 
