@@ -1,0 +1,11 @@
+{
+  "name": "mini-max_sum",
+  "version": "1.0.0",
+  "description": "Problem to calculate the min and max of 5 integers",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Suilan Maia",
+  "license": "ISC"
+}

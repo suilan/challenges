@@ -1,0 +1,16 @@
+{
+  "name": "diagonal_difference",
+  "version": "1.0.0",
+  "description": "Given a square matrix, calculate the absolute difference between the sums of its diagonals.",
+  "main": "script.js",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [
+    "challenge",
+    "javascript"
+  ],
+  "author": "Suilan Maia <suilansmaia@gmail.com>",
+  "license": "ISC",
+  "dependencies": {}
+}
